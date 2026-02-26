@@ -72,5 +72,5 @@ startCountdown();
 window.addEventListener("load", function() {
   setTimeout(function() {
     document.getElementById("loadingScreen").style.display = "none";
-  }, 2000); // 2000 = 2 detik
+  }, 1000); // 2000 = 2 detik
 });
