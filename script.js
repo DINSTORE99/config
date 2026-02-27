@@ -1,7 +1,7 @@
 // ======================
 // SETTING HARI EXPIRED
 // ======================
-const HARI_EXPIRED = 0;
+const HARI_EXPIRED = 1;
 
 function toggleOperator(id) {
   const menus = document.querySelectorAll(".btn-list");
@@ -72,5 +72,5 @@ startCountdown();
 window.addEventListener("load", function() {
   setTimeout(function() {
     document.getElementById("loadingScreen").style.display = "none";
-  }, 1800); // 2000 = 2 detik
+  }, 1000); // 2000 = 2 detik
 });
