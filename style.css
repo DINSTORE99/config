@@ -287,6 +287,8 @@ h1 {
     transform: translateY(0);
   }
 }
+
+
 #loadingScreen {
   position: fixed;
   top: 0;
@@ -298,24 +300,27 @@ h1 {
   justify-content: center;
   align-items: center;
   z-index: 99999;
-  flex-direction: column;
 }
 
-.loader-box {
+.loading-box {
   text-align: center;
   color: white;
+  font-size: 16px;
+  letter-spacing: 2px;
 }
 
 .spinner {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border: 5px solid #333;
-  border-top: 5px solid #00eaff;
+  border-top: 5px solid #00c8ff;
   border-radius: 50%;
   animation: spin 1s linear infinite;
-  margin: 0 auto 20px;
+  margin: 0 auto 15px;
 }
 
 @keyframes spin {
-  100% { transform: rotate(360deg); }
-}
+  100% {
+    transform: rotate(360deg);
+  }
+                            }
