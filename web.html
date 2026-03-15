@@ -6,70 +6,131 @@
 <title>LIST SERVER DIN STORE</title>
 
 <style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #111;
-  color: white;
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-h1 {
-  text-align: center;
-  margin: 20px 0;
+body{
+font-family:Arial, sans-serif;
+background:radial-gradient(circle at top,#0a0f3d,#000 70%);
+color:white;
 }
 
-.server-box {
-  background: #1c1c1c;
-  margin: 15px;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+/* TITLE */
+
+h1{
+text-align:center;
+margin:25px 0;
+letter-spacing:2px;
+font-size:24px;
+text-shadow:0 0 10px #00c8ff;
 }
 
-.server-header {
-  background: linear-gradient(45deg,#00b894,#00cec9);
-  padding: 15px;
-  font-weight: bold;
-  font-size: 16px;
+/* SERVER BOX */
+
+.server-box{
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(12px);
+margin:15px;
+border-radius:18px;
+overflow:hidden;
+border:1px solid rgba(255,255,255,0.08);
+box-shadow:0 0 25px rgba(0,200,255,0.2);
+transition:0.3s;
 }
 
-.server-content {
-  padding: 15px;
+.server-box:hover{
+transform:translateY(-5px);
+box-shadow:0 0 35px rgba(0,200,255,0.4);
 }
 
-.info {
-  margin: 8px 0;
-  font-size: 14px;
+/* HEADER */
+
+.server-header{
+background:linear-gradient(90deg,#00c8ff,#00ffa6);
+padding:15px;
+font-weight:bold;
+font-size:16px;
+color:black;
+text-align:center;
 }
 
-.protocol {
-  background: #222;
-  margin-top: 10px;
-  border-radius: 10px;
-  padding: 10px;
+/* CONTENT */
+
+.server-content{
+padding:15px;
 }
 
-.protocol-title {
-  font-weight: bold;
-  margin-bottom: 8px;
+/* INFO */
+
+.info{
+margin:8px 0;
+font-size:14px;
+color:#ddd;
 }
 
-.buy-btn {
-  display: block;
-  margin-top: 8px;
-  padding: 10px;
-  background: #00b894;
-  color: white;
-  text-align: center;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
+/* PROTOCOL BOX */
+
+.protocol{
+background:rgba(255,255,255,0.04);
+margin-top:12px;
+border-radius:12px;
+padding:12px;
+border:1px solid rgba(255,255,255,0.08);
 }
 
-.buy-btn:hover {
-  background: #00a383;
+/* PROTOCOL TITLE */
+
+.protocol-title{
+font-weight:bold;
+margin-bottom:8px;
+color:#00ffe7;
+text-shadow:0 0 8px #00ffe7;
+}
+
+/* BUY BUTTON */
+
+.buy-btn{
+display:block;
+margin-top:8px;
+padding:10px;
+background:linear-gradient(90deg,#00c8ff,#00ffa6);
+color:black;
+text-align:center;
+border-radius:12px;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+.buy-btn:hover{
+transform:scale(1.05);
+box-shadow:0 0 15px #00c8ff;
+}
+
+/* MOBILE */
+
+@media(max-width:500px){
+
+h1{
+font-size:20px;
+}
+
+.server-header{
+font-size:15px;
+}
+
+.info{
+font-size:13px;
+}
+
 }
 </style>
+
+
 </head>
 
 <body>
