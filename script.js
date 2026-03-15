@@ -1,7 +1,7 @@
 // ======================
 // SETTING HARI EXPIRED
 // ======================
-const HARI_EXPIRED = 0;
+const HARI_EXPIRED = 1;
 
 function toggleOperator(id) {
   const menus = document.querySelectorAll(".btn-list");
