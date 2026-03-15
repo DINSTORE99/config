@@ -68,9 +68,12 @@ function startCountdown() {
 }
 
 startCountdown();
+function toggleOperator(id) {
+  let el = document.getElementById(id);
+  el.style.display = el.style.display === "block" ? "none" : "block";
+}
 
-window.addEventListener("load", function() {
-  setTimeout(function() {
-    document.getElementById("loadingScreen").style.display = "none";
-  }, 2000); // 2000 = 2 detik
-});
+function toggleSub(id) {
+  let el = document.getElementById(id);
+  el.style.display = el.style.display === "block" ? "none" : "block";
+}
