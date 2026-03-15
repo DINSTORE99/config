@@ -6,52 +6,119 @@
 <title>LIST CONFIG PREMIUM</title>
 
 <style>
-body {
-  background: #111;
-  color: white;
-  font-family: Arial;
-  padding: 20px;
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-.box {
-  background: #1a1a1a;
-  padding: 20px;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+body{
+background:radial-gradient(circle at top,#0a0f3d,#000 70%);
+color:white;
+font-family:Arial,Helvetica,sans-serif;
+padding:20px;
 }
 
-h2 {
-  text-align: center;
-  color: orange;
+/* BOX */
+
+.box{
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(12px);
+padding:22px;
+border-radius:18px;
+margin-bottom:20px;
+border:1px solid rgba(255,255,255,0.08);
+box-shadow:0 0 25px rgba(0,200,255,0.2);
+transition:0.3s;
 }
 
-.line {
-  border-top: 1px solid #333;
-  margin: 15px 0;
+.box:hover{
+transform:translateY(-4px);
+box-shadow:0 0 35px rgba(0,200,255,0.4);
 }
 
-.item {
-  margin: 8px 0;
+/* TITLE */
+
+h2{
+text-align:center;
+color:#00ffe7;
+margin-bottom:10px;
+font-size:20px;
+text-shadow:0 0 10px #00ffe7;
 }
 
-.protocol {
-  background: #222;
-  padding: 15px;
-  border-radius: 15px;
+/* LINE */
+
+.line{
+border-top:1px solid rgba(255,255,255,0.1);
+margin:15px 0;
 }
 
-.back {
-  display: block;
-  text-align: center;
-  margin-top: 20px;
-  background: orange;
-  padding: 12px;
-  border-radius: 15px;
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
+/* ITEM LIST */
+
+.item{
+margin:8px 0;
+font-size:15px;
+color:#ddd;
+padding-left:5px;
 }
+
+/* PROTOCOL BOX */
+
+.protocol{
+background:rgba(255,255,255,0.04);
+border:1px solid rgba(0,255,231,0.2);
+}
+
+/* INFO TEXT */
+
+.info{
+text-align:center;
+color:#00ffa6;
+font-weight:bold;
+margin-top:10px;
+text-shadow:0 0 8px #00ffa6;
+}
+
+/* BACK BUTTON */
+
+.back{
+display:block;
+text-align:center;
+margin-top:25px;
+background:linear-gradient(90deg,#00c8ff,#00ffa6);
+padding:14px;
+border-radius:30px;
+text-decoration:none;
+color:black;
+font-weight:bold;
+transition:0.3s;
+}
+
+.back:hover{
+transform:scale(1.05);
+box-shadow:0 0 20px #00c8ff;
+}
+
+/* MOBILE */
+
+@media(max-width:500px){
+
+body{
+padding:15px;
+}
+
+h2{
+font-size:18px;
+}
+
+.item{
+font-size:14px;
+}
+
+}
+
 </style>
 </head>
 <body>
@@ -102,7 +169,7 @@ h2 {
   
 <div class="line"></div>
 <div style="text-align:center; color:orange; font-weight:bold;">
-  TIDAK ADA GARANSI JIKA PIHAK OPERATOR MEMATIKAN.
+  TIDAK ADA GARANSI JIKA PIHAK OPERATOR MEMATIKAN BUG.
 </div>
 </div>
 
