@@ -229,7 +229,6 @@
     </div>
   </div>
 </div>
-
 <script src="script.js"></script>
 <script>
 function toggleMenu() {
@@ -237,16 +236,17 @@ function toggleMenu() {
   menu.style.display =
     menu.style.display === "flex" ? "none" : "flex";
 }
-</script>
-</script>
-<script>
-  window.addEventListener("load", function() {
+
+window.addEventListener("load", function() {
+  const loading = document.getElementById("loadingScreen");
+  if (loading) {
     setTimeout(function() {
-      document.getElementById("loadingScreen").style.display = "none";
+      loading.style.display = "none";
     }, 100);
-  });
+  }
+});
 </script>
-</body>
+
 <!-- ===== TOMBOL DINPAY ===== -->
 <div style="text-align:center; margin:30px 0;">
   <a href="https://dinpay.vercel.app/" target="_blank" class="btn-dinpay">
@@ -254,6 +254,4 @@ function toggleMenu() {
   </a>
 </div>
 </body>
-
-</div>
 </html>
